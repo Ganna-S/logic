@@ -28,19 +28,19 @@
     box-sizing: inherit;
   }
   body {
-    font-family: "Raleway", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    font-weight: 500;
-    background-color: #fefefe;
-    color: #606060;
+    font-weight: 400;
+    background-color: #fff;
     position: relative;
     min-width: 320px;
   }
   
   a {
-    color: #606060;
+    color: #fff;
     display: inline-block;
     text-decoration: none;
+    cursor: pointer;
   }
   
   ul {
