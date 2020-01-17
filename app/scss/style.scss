@@ -1,10 +1,11 @@
 @import "global";
+@import "fonts";
 
 // start header
 .header {
   position: relative;
   z-index: 2;
-  height: 935px;
+  height: 675px;
   width: 100vw;
 }
 
@@ -55,13 +56,14 @@
   padding-bottom: 30px;
   color: #c85f04;
 }
-
+//end slider
+//start slider
 .slider__box {
   position: absolute;
   z-index: 1;
   top: 0;
   left: 0;
-  height: 935px;
+  height: 100vh;
   width: 100vw;
   overflow: hidden;
 }
@@ -74,14 +76,8 @@
   background-size: cover;
   position: relative;
   img {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    bottom: 0;
-    margin: auto 0;
-    height: 100%;
-    transform: translateX(-50%);
-    min-width: 100%;
+    display: flex;
+    width: 100%;
   }
 }
 .slider__content {
@@ -106,7 +102,8 @@
   text-transform: capitalize;
   margin-bottom: 50px;
 }
-.slider__btn {
+.slider__btn,
+.tabs-btn {
   font-size: 13px;
   width: 170px;
   background-color: #c85f04;
@@ -114,22 +111,107 @@
   padding: 20px 30px;
   text-transform: uppercase;
 }
-.slick-dots {
+ul.slick-dots {
   display: flex;
   justify-content: center;
+  position: relative;
+  height: 15px;
 }
 .slick-dots li {
   margin: 0 10px;
-  width: auto;
-  height: auto;
   height: 10px;
   width: 10px;
   content: url(../images/dots.png);
-  margin-top: -50px;
-  z-index: 2;
+  margin-top: -60px;
+  z-index: 3;
 }
 .slick-dots li.slick-active {
   background-color: #c85f04;
 }
+//end slider
+//start services
 
-//end header
+.services {
+  padding-bottom: 100px;
+}
+.tabs {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  span {
+    display: block;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-top: 110px;
+  }
+  .tab {
+    position: relative;
+    width: 100%;
+    height: 125px;
+    background-color: #eeeeee;
+    cursor: pointer;
+  }
+  .tab::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 125px;
+    border: 140px solid transparent;
+    border-top: 55px solid #eeeeee;
+    max-height: 55px;
+  }
+  .icon-Megaphone,
+  .icon-Bulb,
+  .icon-Starship {
+    margin-right: 20px;
+  }
+}
+.tab.active {
+  background-color: #c85f04;
+  color: #fff;
+}
+.tab.active::after {
+  border: 139px solid transparent;
+  border-top: 55px solid #c85f04;
+}
+
+.tab_content {
+  margin-top: 55px;
+  .tab-item {
+    display: none;
+    &:first-child {
+      display: block;
+    }
+  }
+}
+.services__box {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  font-size: 24px;
+  line-height: 60px;
+  text-transform: uppercase;
+  max-width: 220px;
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 57px;
+  position: relative;
+}
+
+.services__content {
+  max-width: 560px;
+}
+.services__box img {
+  padding-right: 70px;
+}
+
+.services__box-text {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 50px;
+  
+}
+
+//end services
