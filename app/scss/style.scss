@@ -121,9 +121,13 @@ ul.slick-dots {
   margin: 0 10px;
   height: 10px;
   width: 10px;
-  content: url(../images/dots.png);
+  border: 1px solid #dddddd;
+  font-size: 0;
   margin-top: -60px;
-  z-index: 3;
+  z-index: 2;
+}
+.slick-dots li button {
+  display: none;
 }
 .slick-dots li.slick-active {
   background-color: #c85f04;
@@ -132,7 +136,7 @@ ul.slick-dots {
 //start services
 
 .services {
-  padding-bottom: 100px;
+  padding-bottom: 110px;
 }
 .tabs {
   display: flex;
@@ -201,9 +205,8 @@ ul.slick-dots {
 .title {
   font-size: 24px;
   line-height: 60px;
-  font-weight: 700;
   text-transform: uppercase;
-  max-width: 221px;
+  max-width: 230px;
   border-bottom: 1px solid #eeeeee;
   margin-bottom: 57px;
   position: relative;
@@ -226,9 +229,69 @@ ul.slick-dots {
 
 .services__box-text {
   font-family: "Raleway", sans-serif;
-  font-size: 14px;
+  color: #787878;
   line-height: 30px;
   margin-bottom: 50px;
 }
-
 //end services
+//start work
+.work {
+  margin-bottom: 100px;
+}
+.work__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.work__box {
+  max-width: 570px;
+  position: relative;
+  .slick-dots li {
+    margin-top: 30px;
+    border: 1px solid #dddddd;
+    height: 10px;
+    width: 10px;
+  }
+}
+.work__box.slick-dots {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.slider__item-work {
+  height: 340px;
+}
+.work__content {
+  margin-left: 30px;
+  max-width: 570px;
+  &-title {
+    font-size: 16px;
+    line-height: 24px;
+    color: #444444;
+    padding-bottom: 25px;
+  }
+  &-text {
+    font-family: "Raleway", sans-serif;
+    color: #787878;
+    line-height: 30px;
+    padding-bottom: 25px;
+  }
+}
+.work__content-client,
+.work__content-date,
+.work__content-client {
+  line-height: 30px;
+  span {
+   color: #787878; 
+  }
+}
+.work-btn{
+  margin-top: 30px;
+  color: #444444;
+  font-size: 13px;
+  width: 170px;
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 20px 30px;
+  text-transform: uppercase;
+}
+//end work

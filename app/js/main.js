@@ -1,6 +1,6 @@
 $(function () {
 
-    $('.slider__box').slick({
+    $('.slider__box, .work__box').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
