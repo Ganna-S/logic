@@ -5,7 +5,7 @@
 .header {
   position: relative;
   z-index: 2;
-  height: 675px;
+  height: 635px;
   width: 100vw;
 }
 
@@ -160,11 +160,20 @@ ul.slick-dots {
     border-top: 55px solid #eeeeee;
     max-height: 55px;
   }
-  .icon-Megaphone,
-  .icon-Bulb,
-  .icon-Starship {
+  .icon-uniE67A,
+  .icon-uniE6C4,
+  .icon-uniE609 {
     margin-right: 20px;
   }
+}
+.icon-uniE67A:before,
+.icon-uniE610:before,
+.icon-uniE609:before,
+.icon-uniE6C4:before {
+  position: absolute;
+  top: 30%;
+  right: 40%;
+  font-size: 60px;
 }
 .tab.active {
   background-color: #c85f04;
@@ -194,7 +203,7 @@ ul.slick-dots {
   line-height: 60px;
   font-weight: 700;
   text-transform: uppercase;
-  max-width: 220px;
+  max-width: 221px;
   border-bottom: 1px solid #eeeeee;
   margin-bottom: 57px;
   position: relative;
