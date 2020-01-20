@@ -294,6 +294,10 @@ ul.slick-dots {
   padding: 20px 30px;
   text-transform: uppercase;
 }
+.work-btn:hover {
+  color: #fff;
+  background-color: #c85f04;
+}
 //end work
 //start video
 .video {
@@ -331,19 +335,42 @@ ul.slick-dots {
     position: relative;
     &-item {
       margin-left: 127px;
-      margin-bottom: 65px;
     }
   }
 }
-//  {
-//   content: "";
-//   position: absolute;
-//   top: 125px;
-//   left: 0;
-//   width: 85px;
-//   height: 105px;
-//   background-color: #c85f04;
-// }
+.about__tab {
+  display: block;
+  top: 112px;
+  right: 128px;
+  padding: 40px 25px;
+  position: relative;
+  height: 105px;
+  width: 85px;
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+.about__tab::after {
+  content: "";
+  position: absolute;
+  left: 85px;
+  top: 0px;
+  border: 53px solid transparent;
+  border-left: 15px solid #eeeeee;
+  max-height: 56px;
+}
+.about__tab:hover {
+  background-color: #c85f04;
+  color: #fff;
+}
+.about__tab::after:hover {
+  border: 53px solid transparent;
+  border-left: 15px solid #c85f04;
+}
+.icon-uniE637:before,
+.icon-uniE676:before,
+.icon-uniE67F:before {
+  font-size: 36px;
+}
 .box-item__title {
   font-size: 16px;
   line-height: 30px;
