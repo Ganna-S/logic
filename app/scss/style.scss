@@ -327,7 +327,7 @@ ul.slick-dots {
 }
 //end video
 // start about
-.about__inner {
+.about__inner-top {
   display: flex;
   justify-content: space-between;
   .about__box {
@@ -384,4 +384,83 @@ ul.slick-dots {
   color: #787878;
   line-height: 30px;
 }
+.about__inner-buttom{
+  display: flex;
+  justify-content: space-between;
+}
+.tabs{
+  max-width: 570px;
+}
+.tab + .tab-about {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+.tabs + .tabs-about span{
+  display: block;
+  font-size: 13px;
+  max-height: 45px;
+  text-transform: uppercase;
+}
 //  end about
+
+
+// .tabs {
+//   display: flex;
+//   text-align: center;
+//   justify-content: space-between;
+//   span {
+//     display: block;
+//     font-size: 16px;
+//     text-transform: uppercase;
+//     padding-top: 110px;
+//   }
+//   .tab {
+//     position: relative;
+//     width: 100%;
+//     height: 125px;
+//     background-color: #eeeeee;
+//     cursor: pointer;
+//   }
+//   .tab::after {
+//     content: "";
+//     position: absolute;
+//     right: 0px;
+//     top: 125px;
+//     border: 140px solid transparent;
+//     border-top: 55px solid #eeeeee;
+//     max-height: 55px;
+//   }
+//   .icon-uniE67A,
+//   .icon-uniE6C4,
+//   .icon-uniE609 {
+//     margin-right: 20px;
+//   }
+// }
+// .icon-uniE67A:before,
+// .icon-uniE610:before,
+// .icon-uniE609:before,
+// .icon-uniE6C4:before {
+//   position: absolute;
+//   top: 30%;
+//   right: 40%;
+//   font-size: 60px;
+// }
+// .tab.active {
+//   background-color: #c85f04;
+//   color: #fff;
+// }
+// .tab.active::after {
+//   border: 139px solid transparent;
+//   border-top: 55px solid #c85f04;
+// }
+
+// .tab_content {
+//   margin-top: 55px;
+//   .tab-item {
+//     display: none;
+//     &:first-child {
+//       display: block;
+//     }
+//   }
+// }
