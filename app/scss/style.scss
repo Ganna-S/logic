@@ -332,18 +332,18 @@ ul.slick-dots {
   justify-content: space-between;
   .about__box {
     max-width: 570px;
-    position: relative;
-    &-item {
-      margin-left: 127px;
+    
+    &-item{
+      position: relative;
+      margin-bottom: 65px;
     }
   }
 }
 .about__tab {
-  display: block;
-  top: 112px;
-  right: 128px;
+  top: 8px;
+  left: 0;
   padding: 40px 25px;
-  position: relative;
+  position: absolute;
   height: 105px;
   width: 85px;
   background-color: #eeeeee;
@@ -362,7 +362,7 @@ ul.slick-dots {
   background-color: #c85f04;
   color: #fff;
 }
-.about__tab::after:hover {
+.about__tab:hover::after {
   border: 53px solid transparent;
   border-left: 15px solid #c85f04;
 }
@@ -371,14 +371,17 @@ ul.slick-dots {
 .icon-uniE67F:before {
   font-size: 36px;
 }
-.box-item__title {
+.box-item__content {
+  margin-left: 128px;
+}
+.box-item-title {
   font-size: 16px;
   line-height: 30px;
   padding-bottom: 30px;
 }
-.box-item__text {
+.box-item-text {
   font-family: "Raleway", sans-serif;
   color: #787878;
   line-height: 30px;
 }
-// end about
+//  end about
