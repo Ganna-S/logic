@@ -395,7 +395,6 @@ ul.slick-dots {
 .services__tabs.about__tabs {
   max-width: 570px;
   .tabs {
-    // width: 100%;
     span {
       min-width: 170px;
       background-color: #fff;
@@ -502,7 +501,7 @@ ul.slick-dots {
           left: 0;
           color: #c85f04;
           display: flex;
-          justify-content: flex-start ;
+          justify-content: flex-start;
           align-items: center;
           font-size: 30px;
           padding: 25px 0;
@@ -511,13 +510,27 @@ ul.slick-dots {
     }
   }
 }
-// .icon-uniE61F:before,
-// .icon-uniE628:before,
-// .icon-uniE69B:before,
-// .icon-uniE637:before {
-//   position: absolute;
-//   top: 20px;
-//   right: 70px;
-//   font-size: 30px;
-// }
+
 // end awards
+//start services
+.services__inner-top,
+.services__inner-buttom {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 75px;
+  .inner__item {
+    max-width: 325px;
+    span {
+      margin-left: 82px;
+      
+    }
+    .services__text {
+      padding-top: 25px;
+      line-height: 30px;
+      color: #787878;
+    }
+  }
+}
+
+
+//end services
