@@ -476,10 +476,48 @@ ul.slick-dots {
 //  end about
 // start awards
 .awards {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   margin-bottom: 140px;
   .awards__inner {
-    height: 500px;
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-item {
+      max-width: 170px;
+      color: #fff;
+      padding: 190px 0;
+      .inner__number {
+        font-size: 45px;
+      }
+      span {
+        font-size: 13px;
+        text-transform: uppercase;
+        position: absolute;
+        width: 170px;
+        &::before {
+          top: 0;
+          left: 0;
+          color: #c85f04;
+          display: flex;
+          justify-content: flex-start ;
+          align-items: center;
+          font-size: 30px;
+          padding: 25px 0;
+        }
+      }
+    }
   }
 }
+// .icon-uniE61F:before,
+// .icon-uniE628:before,
+// .icon-uniE69B:before,
+// .icon-uniE637:before {
+//   position: absolute;
+//   top: 20px;
+//   right: 70px;
+//   font-size: 30px;
+// }
 // end awards
