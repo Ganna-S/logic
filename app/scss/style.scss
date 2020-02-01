@@ -133,9 +133,9 @@ ul.slick-dots {
   background-color: #c85f04;
 }
 //end slider
-//start services
+//start design
 
-.services {
+.design {
   padding-bottom: 110px;
 }
 .tabs {
@@ -187,7 +187,6 @@ ul.slick-dots {
   border: 139px solid transparent;
   border-top: 55px solid #c85f04;
 }
-
 .tab_content {
   margin-top: 55px;
   .tab-item {
@@ -197,17 +196,17 @@ ul.slick-dots {
     }
   }
 }
-.services__box {
+.design__box {
   padding-top: 100px;
   display: flex;
   justify-content: space-between;
 }
 .title {
-  font-size: 24px;
+  font-size: 30px;
   line-height: 60px;
   font-weight: 600;
   text-transform: uppercase;
-  max-width: 230px;
+  max-width: 300px;
   border-bottom: 1px solid #eeeeee;
   margin-bottom: 57px;
   position: relative;
@@ -221,20 +220,20 @@ ul.slick-dots {
   height: 3px;
   background-color: #c85f04;
 }
-.services__content {
+.design__content {
   max-width: 560px;
 }
-.services__box img {
+.design__box img {
   padding-right: 70px;
 }
 
-.services__box-text {
+.design__box-text {
   font-family: "Raleway", sans-serif;
   color: #787878;
   line-height: 30px;
   margin-bottom: 50px;
 }
-//end services
+//end design
 //start work
 .work {
   margin-bottom: 100px;
@@ -392,9 +391,12 @@ ul.slick-dots {
   display: flex;
   justify-content: space-between;
 }
-.services__tabs.about__tabs {
+.design__tabs.about__tabs {
   max-width: 570px;
   .tabs {
+    .tab + .tab {
+      margin-left: none;
+    }
     span {
       min-width: 170px;
       background-color: #fff;
@@ -423,10 +425,8 @@ ul.slick-dots {
       }
     }
   }
-  .tabs .tab + .tab {
-    margin-left: none;
-  }
 }
+
 .about__item-box {
   margin-bottom: 25px;
 }
@@ -494,7 +494,6 @@ ul.slick-dots {
       span {
         font-size: 13px;
         text-transform: uppercase;
-        position: absolute;
         width: 170px;
         &::before {
           top: 0;
@@ -558,6 +557,7 @@ ul.slick-dots {
 }
 //end services
 //start team
+
 .team {
   margin-bottom: 130px;
   .team__inner {
@@ -568,43 +568,49 @@ ul.slick-dots {
       height: 350px;
       position: relative;
       .team__box {
-        width: 230px;
-        height: 155px;
-        background-color: rgba(255, 114, 0, 0.902);
-        position: absolute;
-        top: 100px;
-        left: 20px;
-        padding: 20px;
-        color: #fff;
-        &-name {
-          font-size: 16px;
-          padding-bottom: 10px;
-          text-transform: uppercase;
-        }
-        &-position {
-          font-size: 14px;
-          padding-bottom: 35px;
-        }
-        &-social {
+        display: inline-block;
+        position: relative;
+        &-info {
+          background-color: rgba(255, 114, 0, 0.902);
+          height: 0px;
+          width: 0;
           display: flex;
-          justify-content: space-between;
-          li {
-            width: 35px;
-            height: 35px;
-            &:hover {
-              background-color: #fff;
-            }
-            a {
+          flex-direction: column;
+          color: #fff;
+          position: absolute;
+          bottom: 97px;
+          left: 20px;
+          overflow: hidden;
+          .team__box-name {
+            font-size: 16px;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+          }
+          .team__box-position {
+            font-size: 14px;
+            padding-bottom: 35px;
+          }
+          .team__box-social {
+            display: flex;
+            justify-content: space-between;
+            li {
               width: 35px;
               height: 35px;
-              padding: 2%;
-              color: #fff;
-              border: 1px solid #fff;
-              display: flex;
-              justify-content: center;
-              align-items: center;
               &:hover {
-                color: #c85f04;
+                background-color: #fff;
+              }
+              a {
+                width: 35px;
+                height: 35px;
+                padding: 2%;
+                color: #fff;
+                border: 1px solid #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover {
+                  color: #c85f04;
+                }
               }
             }
           }
@@ -613,12 +619,151 @@ ul.slick-dots {
     }
   }
 }
+.team__box:hover .team__box-info {
+  height: 155px;
+  width: 230px;
+  padding: 20px;
+}
 //end team
+//start choose
+.choose__inner {
+  display: flex;
+  justify-content: space-between;
+}
+//end choose
+//start project
+.project {
+  margin-bottom: 140px;
+}
+.project__inner {
+  &-top {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.project__inner-btn {
+  max-height: 50px;
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 60px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #eeeeee;
+  position: relative;
+  button {
+    font-weight: 600;
+    margin-right: 40px;
+    background-color: #fff;
+    border: none;
+    &:hover {
+      color: #c85f04;
+    }
+  }
+}
+.project__inner-btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: 51px;
+  height: 3px;
+  background-color: #c85f04;
+}
+
+.project__item {
+  display: inline-block;
+  position: relative;
+  .project__item-img {
+    background-repeat: no-repeat;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    margin: 5px;
+  }
+  .small {
+    width: 270px;
+    height: 300px;
+  }
+  .big {
+    width: 570px;
+    height: 300px;
+  }
+  &-content {
+    background-color: rgba(255, 114, 0, 0.902);
+    position: absolute;
+    height: 0;
+    bottom: 70px;
+    left: 20px;
+    width: 100%;
+    overflow: hidden;
+    color: #fff;
+    .project__item-link {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 40px;
+      a {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+        padding: 2%;
+        color: #fff;
+        border: 1px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+        &:hover {
+          background-color: #fff;
+          color: #c85f04;
+        }
+      }
+    }
+    .project__item-title {
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+  }
+}
+.project__item:hover .project__item-content {
+  height: 155px;
+  width: 230px;
+  padding: 20px;
+}
+
+//end project
+//start customers
+.slider__item-customers {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 560px;
+  .customers__content {
+    color: #fff;
+    margin: 100px 200px;
+    text-align: center;
+    &-icon {
+      font-size: 36px;
+      border: 1px solid #eeeeee;
+      padding: 20px;
+    }
+    &-text {
+      font-family: "Raleway", sans-serif;
+      margin-top: 75px;
+      margin-bottom: 50px;
+      line-height: 30px;
+    }
+    &-name {
+      font-size: 16px;
+    }
+  }
+}
+//end customers
 //start trademark
 .trademark {
   min-height: 450px;
   background-color: #eeeeee;
   margin-bottom: 130px;
+  margin-top: -15px;
   .trademark__inner {
     display: flex;
     justify-content: space-between;
@@ -742,6 +887,7 @@ ul.slick-dots {
   position: absolute;
   top: 0px;
   left: 0px;
+  cursor: pointer;
   a {
     color: #fff;
     font-size: 16px;
@@ -751,4 +897,5 @@ ul.slick-dots {
     left: 580px;
   }
 }
+
 //end map
