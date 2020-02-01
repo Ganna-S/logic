@@ -215,7 +215,7 @@ ul.slick-dots {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 2px;
+  left: 0px;
   width: 51px;
   height: 3px;
   background-color: #c85f04;
@@ -546,7 +546,7 @@ ul.slick-dots {
 .services__icon::after {
   content: "";
   position: absolute;
-  left: 62px;
+  left: 55px;
   top: -18px;
   border: 32px solid transparent;
   border-left: 10px solid #eeeeee;
@@ -828,10 +828,9 @@ ul.slick-dots {
   content: "";
   position: absolute;
   left: 45px;
-  top: -3px;
-  border: 30px solid transparent;
+  top: 0px;
+  border: 28px solid transparent;
   border-left: 10px solid #eeeeee;
-  height: 60px;
 }
 .contact__message {
   max-width: 570px;
@@ -897,5 +896,88 @@ ul.slick-dots {
     left: 580px;
   }
 }
-
 //end map
+//start footer
+.footer__content {
+  background-color: #1a1a1a;
+  padding: 80px 0 90px;
+  margin-top: 40px;
+  .footer__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__colmn {
+    display: flex;
+    justify-content: space-between;
+    max-width: 220px;
+    width: 100%;
+  }
+  .footer__col {
+    max-width: 270px;
+    width: 100%;
+    position: relative;
+    img {
+      margin-top: 15px;
+      margin-bottom: 38px;
+    }
+    a {
+      color: #999999;
+    }
+    &-title {
+      font-size: 16px;
+      color: #dddddd;
+      border-bottom: 1px solid #5a5a5a;
+      margin-bottom: 40px;
+      &::after {
+      }
+    }
+    &-text {
+      line-height: 30px;
+      color: #999999;
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      a {
+        line-height: 30px;
+        &:hover {
+          color: #c85f04;
+        }
+      }
+    }
+    input {
+      background-color: #1a1a1a;
+      padding: 10px 15px;
+      border: 1px solid #5a5a5a;
+      width: 270px;
+      margin-top: 20px;
+      color: #999999;
+    }
+    span {
+      position: absolute;
+      right: 15px;
+      bottom: 12px;
+    }
+  }
+}
+.footer__copy {
+  background-color: #000000;
+  padding: 40px 0;
+  color: #dddddd;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__copy-text {
+  font-family: "Raleway", sans-serif;
+}
+.team__box-social {
+  li {
+    margin-left: 35px;
+  }
+  &:hover {
+    color: #c85f04;
+  }
+}
+//end footer
