@@ -25,6 +25,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-cheveron-up:before {
+  content: "\e905";
+}
+.icon-cheveron-down:before {
+  content: "\e904";
+}
 .icon-right-quote:before {
   content: "\e903";
 }
