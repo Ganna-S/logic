@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Stroke-Gap-Icons';
-  src:  url('../fonts/Stroke-Gap-Icons.eot?v6ce4d');
-  src:  url('../fonts/Stroke-Gap-Icons.eot?v6ce4d#iefix') format('embedded-opentype'),
-    url('../fonts/Stroke-Gap-Icons.ttf?v6ce4d') format('truetype'),
-    url('../fonts/Stroke-Gap-Icons.woff?v6ce4d') format('woff'),
-    url('../fonts/Stroke-Gap-Icons.svg?v6ce4d#Stroke-Gap-Icons') format('svg');
+  src:  url('../fonts/Stroke-Gap-Icons.eot?3ps05v');
+  src:  url('../fonts/Stroke-Gap-Icons.eot?3ps05v#iefix') format('embedded-opentype'),
+    url('../fonts/Stroke-Gap-Icons.ttf?3ps05v') format('truetype'),
+    url('../fonts/Stroke-Gap-Icons.woff?3ps05v') format('woff'),
+    url('../fonts/Stroke-Gap-Icons.svg?3ps05v#Stroke-Gap-Icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -30,6 +30,9 @@
 }
 .icon-quotes-right:before {
   content: "\e978";
+}
+.icon-checkbox-checked:before {
+  content: "\ea52";
 }
 .icon-facebook:before {
   content: "\ea90";
