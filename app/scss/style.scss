@@ -63,7 +63,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   overflow: hidden;
 }
@@ -76,7 +76,10 @@
   background-size: cover;
   position: relative;
   img {
-    display: flex;
+    background-repeat: no-repeat;
+    display: block;
+    background-position: center;
+    background-size: cover;
     width: 100%;
   }
 }
@@ -424,29 +427,35 @@ ul.slick-dots {
     }
   }
 }
-
-.about__item-box {
-  margin-bottom: 25px;
-}
-.about__item-text {
-  margin-bottom: 25px;
-  line-height: 30px;
-  color: #787878;
-}
-.tab-item__list {
-  li {
-    color: #787878;
-    line-height: 30px;
-    position: relative;
-    padding-left: 25px;
-    margin-right: 45px;
-  }
-  .check-square::before {
-    content: "\ea52";
-    font-family: "Stroke-Gap-Icons";
-    position: absolute;
-    left: 0;
-    color: #787878;
+.design__tabs.about__tabs {
+  .tab_content {
+    display: block;
+    .tab-item {
+      .about__item-box {
+        margin-bottom: 25px;
+      }
+      .about__item-text {
+        margin-bottom: 25px;
+        line-height: 30px;
+        color: #787878;
+      }
+      .tab-item__list {
+        li {
+          color: #787878;
+          line-height: 30px;
+          position: relative;
+          padding-left: 25px;
+          margin-right: 45px;
+        }
+        .check-square::before {
+          content: "\ea52";
+          font-family: "Stroke-Gap-Icons";
+          position: absolute;
+          left: 0;
+          color: #787878;
+        }
+      }
+    }
   }
 }
 .about__items {
@@ -555,7 +564,6 @@ ul.slick-dots {
 }
 //end services
 //start team
-
 .team {
   margin-bottom: 130px;
   .team__inner {
@@ -1038,8 +1046,10 @@ ul.slick-dots {
   li {
     margin-left: 35px;
   }
-  &:hover {
-    color: #c85f04;
+  a {
+    &:hover {
+      color: #c85f04;
+    }
   }
 }
 //end footer
