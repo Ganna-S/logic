@@ -8,7 +8,9 @@
   "author": "Ganna Shutenko",
   "license": "ISC",
   "devDependencies": {
+    "animate.css": "^3.7.2",
     "browser-sync": "^2.26.7",
+    "countup.js": "^2.0.4",
     "cssmin": "^0.4.3",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
@@ -20,7 +22,8 @@
     "magnific-popup": "^1.1.0",
     "mixitup": "^3.3.1",
     "normalize.css": "^8.0.1",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "wow.js": "^1.2.2"
   },
   "dependencies": {
     "responsive-tabs": "^1.6.3"
