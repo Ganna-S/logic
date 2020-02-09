@@ -48,6 +48,15 @@
     }
   }
 }
+.header__menu-btn {
+  width: 30px;
+}
+.header__menu-row {
+  width: 100%;
+  background-color: #fff;
+  height: 4px;
+  margin-bottom: 4px;
+}
 .header__menu a:hover {
   color: #c85f04;
 }
