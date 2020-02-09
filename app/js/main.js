@@ -46,20 +46,25 @@ $(function () {
             var w_height = $(window).height(); // Высота окна браузера
             var d_height = $(document).height(); // Высота всего документа
             var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
-            if (w_top + 100 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+            if (w_top + 300 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
                 $('.inner__number').css('opacity', '1');
                 $('.inner__number').spincrement({
                     thousandSeparator: "",
-                    duration: 1200
+                    duration: 3000
                 });
-    
+
                 show = false;
             }
         });
-    
-    });
-  
 
+    });
+
+    $(window).on("scroll", function () {
+        var w_top = $(window).scrollTop();
+        var e_top = $("#counts").offset().top;
+
+        console.log(w_top + " " + e_top);
+    });
 
     var mixer = mixitup('.project__inner-box');
 
