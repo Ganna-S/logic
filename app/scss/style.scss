@@ -76,14 +76,11 @@
   overflow: hidden;
 }
 .slider__box-item {
-  height: 100vh;
-  outline: none;
-  position: relative;
+  height: calc(100% - 220px);
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  position: relative;
   img {
     max-width: 100%;
   }
@@ -130,7 +127,7 @@ ul.slick-dots {
     width: 10px;
     border: 1px solid #dddddd;
     font-size: 0;
-    margin-bottom: 100px;
+    margin-bottom: 250px;
     z-index: 2;
   }
 }
@@ -146,6 +143,7 @@ ul.slick-dots {
 
 .design {
   padding-bottom: 110px;
+  padding-top: 75px;
 }
 .tabs {
   display: flex;
@@ -155,7 +153,7 @@ ul.slick-dots {
     display: block;
     font-size: 16px;
     text-transform: uppercase;
-    padding-top: 110px;
+    padding-top: 105px;
   }
   .tab {
     position: relative;
@@ -184,7 +182,7 @@ ul.slick-dots {
 .icon-uniE609:before,
 .icon-uniE6C4:before {
   position: absolute;
-  top: 30%;
+  top: 20%;
   right: 40%;
   font-size: 60px;
 }
@@ -206,7 +204,7 @@ ul.slick-dots {
   }
 }
 .design__box {
-  padding-top: 100px;
+  padding-top: 70px;
   display: flex;
   justify-content: space-between;
 }
@@ -254,6 +252,11 @@ ul.slick-dots {
 .work__box {
   max-width: 570px;
   position: relative;
+  .slider__item-work {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
   .slick-dots li {
     margin-top: 30px;
     border: 1px solid #dddddd;
@@ -316,8 +319,10 @@ ul.slick-dots {
 .video__inner {
   position: relative;
   img {
-    height: 100%;
-    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    max-width: 100%;
   }
   a {
     span {
@@ -326,6 +331,7 @@ ul.slick-dots {
       top: 60%;
       left: 40%;
       color: #fff;
+      cursor: pointer;
     }
   }
 }
@@ -407,10 +413,9 @@ ul.slick-dots {
     display: flex;
     justify-content: space-between;
     span {
-      width: 170px;
       background-color: #fff;
       border: 1px solid #dedede;
-      padding: 4%;
+      padding: 20px 35px;
       text-align: center;
       font-size: 13px;
       font-weight: 600;
@@ -487,14 +492,13 @@ ul.slick-dots {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 500px;
   margin-bottom: 140px;
   .awards__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     &-item {
-      max-width: 170px;
+      max-width: 220px;
       color: #fff;
       padding: 190px 0;
       .inner__number {
@@ -503,7 +507,7 @@ ul.slick-dots {
       span {
         font-size: 13px;
         text-transform: uppercase;
-        width: 170px;
+        width: 220px;
         &::before {
           top: 0;
           left: 0;
@@ -521,14 +525,15 @@ ul.slick-dots {
 
 // end awards
 //start services
-.services__inner-top,
-.services__inner-buttom {
+.services__inner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 75px;
+
   .inner__item {
     max-width: 325px;
     position: relative;
+    margin-bottom: 75px;
     span {
       font-weight: 600;
     }
@@ -845,7 +850,7 @@ ul.slick-dots {
     img {
       padding: 180px 0;
       opacity: 50%;
-      &:hover{
+      &:hover {
         opacity: 100%;
       }
     }
@@ -964,6 +969,11 @@ ul.slick-dots {
   position: relative;
   max-height: 160px;
 }
+.contact__map{
+  iframe{
+    width: 100%;
+  }
+}
 .contact__map-inner {
   height: 200px;
   width: 100%;
@@ -976,9 +986,9 @@ ul.slick-dots {
     color: #fff;
     font-size: 16px;
     text-align: center;
-    position: absolute;
-    top: 95px;
-    left: 580px;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
   }
 }
 //end map
@@ -986,7 +996,6 @@ ul.slick-dots {
 .footer__content {
   background-color: #1a1a1a;
   padding: 80px 0 90px;
-  margin-top: 40px;
   .footer__inner {
     display: flex;
     justify-content: space-between;
