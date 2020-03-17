@@ -184,6 +184,9 @@
     text-align: center;
     margin-bottom: 50px;
   }
+  .tab-item__list-box {
+    display: none;
+  }
   .about__items {
     min-width: 100%;
     padding: 0 50px;
@@ -237,7 +240,10 @@
     .footer__inner {
       display: block;
       margin-left: 30px;
-        margin-right: 30px;
+      margin-right: 30px;
+      .footer__col{
+        min-width: 100%;
+      }
     }
   }
   .footer__content .footer__col-title,
@@ -246,7 +252,7 @@
     justify-content: flex-start;
     min-width: 100px;
   }
-  .icon-long-arrow-right:before{
+  .icon-long-arrow-right:before {
     display: none;
   }
   .footer__copy {
@@ -380,8 +386,8 @@
   .box__icon {
     display: none;
   }
-  .footer__copy{
-    .footer__inner{
+  .footer__copy {
+    .footer__inner {
       display: block;
       .footer__box-social {
         li {
