@@ -1,12 +1,12 @@
 @media (max-width: 1300px) {
-  .slider__box-item {
-    // height: 735px;
-  }
   .design {
     padding-top: 0;
   }
   .design__tabs {
     margin-top: 59px;
+    .tabs {
+      padding-top: 15px;
+    }
   }
   .project__inner-top {
     flex-wrap: wrap;
@@ -95,6 +95,7 @@
   .design__tabs {
     .tabs {
       display: block;
+      // padding-top: 15px;
       .tab {
         display: block;
         height: 80px;
@@ -131,7 +132,7 @@
     min-width: 100%;
     text-align: center;
     .design__box-text {
-      margin: 10px;
+      margin: 20px;
     }
   }
   .title {
@@ -152,7 +153,7 @@
     }
     .work__content {
       max-width: 100%;
-      margin: 10px;
+      margin: 20px;
     }
   }
   .about__inner-top {
@@ -162,6 +163,7 @@
     }
     .about__box {
       max-width: 100%;
+      margin: 20px;
       &-item {
         align-items: center;
       }
@@ -190,6 +192,9 @@
   .about__items {
     min-width: 100%;
     padding: 0 50px;
+  }
+  .about__item-box {
+    margin: 20px;
   }
   .awards {
     .awards__inner {
@@ -241,7 +246,7 @@
       display: block;
       margin-left: 30px;
       margin-right: 30px;
-      .footer__col{
+      .footer__col {
         min-width: 100%;
       }
     }
@@ -251,9 +256,6 @@
     display: flex;
     justify-content: flex-start;
     min-width: 100px;
-  }
-  .icon-long-arrow-right:before {
-    display: none;
   }
   .footer__copy {
     padding: 40px 30px;
