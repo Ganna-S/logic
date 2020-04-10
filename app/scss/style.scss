@@ -29,12 +29,14 @@
   }
   .menu__list {
     padding-top: 18px;
+    padding-right: 15px;
+    text-transform: uppercase;
     li {
       color: #fff;
       font-size: 13px;
       cursor: pointer;
       & + li {
-        margin-left: 55px;
+        margin-left: 40px;
       }
     }
   }
@@ -213,7 +215,7 @@ ul.slick-dots {
   line-height: 60px;
   font-weight: 600;
   text-transform: uppercase;
-  max-width: 300px;
+  max-width: 400px;
   border-bottom: 1px solid #eeeeee;
   margin-bottom: 57px;
   position: relative;
@@ -238,7 +240,7 @@ ul.slick-dots {
   font-family: "Raleway", sans-serif;
   color: #787878;
   line-height: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 //end design
 //start work
@@ -338,7 +340,7 @@ ul.slick-dots {
 .icon-uniE614:before {
   position: absolute;
   top: -90px;
-  right: 90px;
+  right: 95px;
   font-size: 60px;
 }
 //end video
@@ -395,6 +397,7 @@ ul.slick-dots {
   line-height: 30px;
   font-weight: 600;
   padding-bottom: 30px;
+  text-transform: uppercase;
 }
 .box-item-text {
   font-family: "Raleway", sans-serif;
@@ -413,6 +416,7 @@ ul.slick-dots {
     display: flex;
     justify-content: space-between;
     span {
+      text-transform: uppercase;
       background-color: #fff;
       border: 1px solid #dedede;
       padding: 20px 35px;
@@ -542,6 +546,7 @@ ul.slick-dots {
     margin-bottom: 75px;
     span {
       font-weight: 600;
+      text-transform: uppercase;
     }
     .services__text {
       padding-top: 25px;
@@ -673,6 +678,7 @@ ul.slick-dots {
   padding: 10px 40px 10px 15px;
   position: relative;
   transition: 0.3s;
+  text-transform: uppercase;
   i {
     margin-right: 10px;
   }
@@ -876,7 +882,7 @@ ul.slick-dots {
     justify-content: space-between;
     margin: 0 100px;
     .contact__info-inner {
-      min-width: 400px;
+      max-width: 400px;
       .contact__info-title {
         font-size: 22px;
       }
@@ -990,6 +996,7 @@ ul.slick-dots {
   left: 0px;
   cursor: pointer;
   a {
+    text-transform: uppercase;
     color: #fff;
     font-size: 16px;
     text-align: center;
